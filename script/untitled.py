@@ -2,10 +2,22 @@ import os
 import random
 import subprocess
 
-path_questoes=os.path.join(os.getcwd(),"questoes/conjuntos")
+path_questoes=os.path.join(os.getcwd(),"../banco-questoes/calculo2/ficha4")
+rel_path = "../banco-questoes/calculo2/ficha4/"
+# list of files from the path_questoes
 lista=os.listdir(path_questoes)
 
-questoes_sorteadas=[lista[i] for i in random.sample(range(len(lista)),5)]
+questoes_sorteadas=[rel_path+lista[i] for i in random.sample(range(len(lista)),5)]
+
+# function to get the path of the desired folder
+#def get_folder(nome_pasta):
+#	path_questoes = os.path.join(os.getcwd(),"questoes/"+folder_name)
+#	return path_questoes
+
+# randomly choose n question from a list
+#def sorted_questions(list_of_questions , n)
+
+
 
 
 content=r'''
@@ -25,7 +37,7 @@ content=r'''
 \usepackage{{amssymb,amsthm,amsfonts,amsmath,pifont}}
 \usepackage{{enumerate}}
 \usepackage[brazil]{{babel}}
-\usepackage[latin1]{{inputenc}}
+\usepackage[utf8]{{inputenc}}
 \usepackage{{hyperref}}
 \usepackage{{dsfont}}
 \usepackage{{upgreek}}
@@ -33,6 +45,7 @@ content=r'''
 \usepackage{{indentfirst}}%1ª linha do capitulo em paragrafo%
 \setcounter{{MaxMatrixCols}}{{30}}
 \usepackage{{color}}
+\usepackage{{relsize}}
 
 %\usepackage[applemac]{{inputenc}}
 %\usepackage[portuges,brazilian]{{babel}}

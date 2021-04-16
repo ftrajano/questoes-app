@@ -1,1 +1,13 @@
-DS_Store
+.DS_Store
+script/teste.aux
+script/teste.log
+script/teste.out
+script/teste.pdf
+script/teste.tex
+script/teste1.aux
+script/teste1.log
+script/teste1.out
+script/teste1.pdf
+script/teste1.synctex.gz
+script/teste1.tex
+
